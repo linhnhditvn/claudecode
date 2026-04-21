@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>E-Commerce Dashboard</title>
-  <!-- Production: replace with npm install tailwindcss + PostCSS -->
+  <title>Báo Cáo Bán Hàng</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,14 +41,14 @@
         <div class="w-9 h-9 rounded-xl bg-[#DF6B33]/10 flex items-center justify-center">
           <i data-lucide="bar-chart-3" class="w-5 h-5 text-[#DF6B33]"></i>
         </div>
-        <h1 class="font-poppins font-bold text-lg text-white">Sales Dashboard</h1>
+        <h1 class="font-poppins font-bold text-lg text-white">Báo Cáo Kinh Doanh</h1>
       </div>
       <div class="flex items-center gap-3">
-        <span class="text-xs text-slate-500 hidden sm:block">Last updated: Apr 21, 2026</span>
-        <button class="p-2 rounded-xl border border-white/10 hover:bg-white/5 transition-all" title="Notifications">
+        <span class="text-xs text-slate-500 hidden sm:block">Cập nhật: 21/04/2026</span>
+        <button class="p-2 rounded-xl border border-white/10 hover:bg-white/5 transition-all" title="Thông báo">
           <i data-lucide="bell" class="w-4 h-4 text-slate-400"></i>
         </button>
-        <button class="p-2 rounded-xl border border-white/10 hover:bg-white/5 transition-all" title="Settings">
+        <button class="p-2 rounded-xl border border-white/10 hover:bg-white/5 transition-all" title="Cài đặt">
           <i data-lucide="settings" class="w-4 h-4 text-slate-400"></i>
         </button>
       </div>
@@ -58,20 +57,20 @@
 
   <main class="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
 
-    <!-- Page Title -->
+    <!-- Tiêu đề trang -->
     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
       <div>
-        <h2 class="font-poppins font-bold text-2xl text-white">E-Commerce Report</h2>
-        <p class="text-slate-400 text-sm mt-0.5">Sales, business &amp; marketing overview — Q1 2026</p>
+        <h2 class="font-poppins font-bold text-2xl text-white">Báo Cáo Thương Mại Điện Tử</h2>
+        <p class="text-slate-400 text-sm mt-0.5">Tổng quan bán hàng, kinh doanh &amp; marketing — Q1 2026</p>
       </div>
       <div class="flex items-center gap-2">
         <button class="flex items-center gap-2 px-3 py-2 rounded-xl border border-white/10 text-sm text-slate-300 hover:bg-white/5 transition-all">
           <i data-lucide="download" class="w-4 h-4"></i>
-          <span class="hidden sm:inline">Export</span>
+          <span class="hidden sm:inline">Xuất dữ liệu</span>
         </button>
         <button class="flex items-center gap-2 px-3 py-2 rounded-xl bg-[#DF6B33] hover:bg-[#C55A28] text-white text-sm font-medium transition-all">
           <i data-lucide="calendar" class="w-4 h-4"></i>
-          <span class="hidden sm:inline">Jan — Mar 2026</span>
+          <span class="hidden sm:inline">Tháng 1 — Tháng 3, 2026</span>
         </button>
       </div>
     </div>
@@ -87,8 +86,8 @@
             <i data-lucide="trending-up" class="w-3 h-3"></i> +18.5%
           </span>
         </div>
-        <div class="font-poppins font-bold text-2xl text-white">$1,284,560</div>
-        <p class="text-slate-500 text-xs mt-1">Total Revenue</p>
+        <div class="font-poppins font-bold text-2xl text-white">$3,853,680</div>
+        <p class="text-slate-500 text-xs mt-1">Tổng doanh thu</p>
       </div>
 
       <div class="bg-card border border-white/5 rounded-2xl p-5 hover:border-white/10 transition-all">
@@ -100,8 +99,8 @@
             <i data-lucide="trending-up" class="w-3 h-3"></i> +12.3%
           </span>
         </div>
-        <div class="font-poppins font-bold text-2xl text-white">8,472</div>
-        <p class="text-slate-500 text-xs mt-1">Total Orders</p>
+        <div class="font-poppins font-bold text-2xl text-white">25,416</div>
+        <p class="text-slate-500 text-xs mt-1">Tổng đơn hàng</p>
       </div>
 
       <div class="bg-card border border-white/5 rounded-2xl p-5 hover:border-white/10 transition-all">
@@ -113,8 +112,8 @@
             <i data-lucide="trending-up" class="w-3 h-3"></i> +24.7%
           </span>
         </div>
-        <div class="font-poppins font-bold text-2xl text-white">156,830</div>
-        <p class="text-slate-500 text-xs mt-1">Unique Visitors</p>
+        <div class="font-poppins font-bold text-2xl text-white">470,490</div>
+        <p class="text-slate-500 text-xs mt-1">Lượt truy cập</p>
       </div>
 
       <div class="bg-card border border-white/5 rounded-2xl p-5 hover:border-white/10 transition-all">
@@ -127,35 +126,35 @@
           </span>
         </div>
         <div class="font-poppins font-bold text-2xl text-white">5.40%</div>
-        <p class="text-slate-500 text-xs mt-1">Conversion Rate</p>
+        <p class="text-slate-500 text-xs mt-1">Tỷ lệ chuyển đổi</p>
       </div>
     </div>
 
     <!-- Charts Row 1 -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
-      <!-- Revenue Trend -->
+      <!-- Doanh thu theo tháng -->
       <div class="lg:col-span-2 bg-card border border-white/5 rounded-2xl p-6">
-        <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
           <div>
-            <h3 class="font-poppins font-semibold text-white">Revenue Trend</h3>
-            <p class="text-slate-500 text-xs mt-0.5">Monthly revenue over the past 6 months</p>
+            <h3 class="font-poppins font-semibold text-white">Xu hướng Doanh thu</h3>
+            <p class="text-slate-500 text-xs mt-0.5">Doanh thu hàng tháng trong 18 tháng qua</p>
           </div>
           <div class="flex items-center gap-4 text-xs">
-            <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-[#DF6B33]"></span> Revenue</span>
-            <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-[#3B82F6]"></span> Orders</span>
+            <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-[#DF6B33]"></span> Doanh thu</span>
+            <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-[#3B82F6]"></span> Đơn hàng</span>
           </div>
         </div>
-        <div class="relative" style="height:280px">
+        <div class="relative" style="height:300px">
           <canvas id="revenueChart"></canvas>
         </div>
       </div>
 
-      <!-- Traffic Sources -->
+      <!-- Nguồn traffic -->
       <div class="bg-card border border-white/5 rounded-2xl p-6">
         <div class="mb-4">
-          <h3 class="font-poppins font-semibold text-white">Traffic Sources</h3>
-          <p class="text-slate-500 text-xs mt-0.5">Visitors by channel</p>
+          <h3 class="font-poppins font-semibold text-white">Nguồn Traffic</h3>
+          <p class="text-slate-500 text-xs mt-0.5">Lượt truy cập theo kênh</p>
         </div>
         <div class="relative" style="height:210px">
           <canvas id="trafficChart"></canvas>
@@ -167,24 +166,24 @@
     <!-- Charts Row 2 -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
-      <!-- Sales by Category -->
+      <!-- Doanh thu theo danh mục -->
       <div class="bg-card border border-white/5 rounded-2xl p-6">
         <div class="mb-4">
-          <h3 class="font-poppins font-semibold text-white">Sales by Category</h3>
-          <p class="text-slate-500 text-xs mt-0.5">Revenue breakdown by product category</p>
+          <h3 class="font-poppins font-semibold text-white">Doanh thu theo Danh mục</h3>
+          <p class="text-slate-500 text-xs mt-0.5">Phân bổ doanh thu theo loại sản phẩm</p>
         </div>
-        <div class="relative" style="height:260px">
+        <div class="relative" style="height:320px">
           <canvas id="categoryChart"></canvas>
         </div>
       </div>
 
-      <!-- Marketing Campaigns -->
+      <!-- Chiến dịch Marketing -->
       <div class="bg-card border border-white/5 rounded-2xl p-6">
         <div class="mb-4">
-          <h3 class="font-poppins font-semibold text-white">Marketing Campaigns</h3>
-          <p class="text-slate-500 text-xs mt-0.5">Spend vs. revenue per channel</p>
+          <h3 class="font-poppins font-semibold text-white">Chiến dịch Marketing</h3>
+          <p class="text-slate-500 text-xs mt-0.5">Chi phí vs. doanh thu theo từng kênh</p>
         </div>
-        <div class="relative" style="height:260px">
+        <div class="relative" style="height:320px">
           <canvas id="campaignChart"></canvas>
         </div>
       </div>
@@ -193,20 +192,20 @@
     <!-- Tables Row -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
-      <!-- Top Products Table -->
+      <!-- Top Sản phẩm -->
       <div class="bg-card border border-white/5 rounded-2xl overflow-hidden">
         <div class="p-6 pb-4 border-b border-white/5">
-          <h3 class="font-poppins font-semibold text-white">Top Selling Products</h3>
-          <p class="text-slate-500 text-xs mt-0.5">Best performers this quarter</p>
+          <h3 class="font-poppins font-semibold text-white">Sản phẩm Bán chạy</h3>
+          <p class="text-slate-500 text-xs mt-0.5">Top sản phẩm hiệu suất cao nhất quý này</p>
         </div>
-        <div class="overflow-x-auto">
+        <div class="overflow-x-auto max-h-96 overflow-y-auto">
           <table class="w-full text-sm">
-            <thead>
+            <thead class="sticky top-0 bg-[#111222] z-10">
               <tr class="border-b border-white/5">
-                <th class="text-left px-6 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Product</th>
-                <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Revenue</th>
-                <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Units</th>
-                <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Trend</th>
+                <th class="text-left px-6 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Sản phẩm</th>
+                <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Doanh thu</th>
+                <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Đã bán</th>
+                <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Xu hướng</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-white/5" id="topProductsTable"></tbody>
@@ -214,20 +213,20 @@
         </div>
       </div>
 
-      <!-- Regional Sales Table -->
+      <!-- Doanh thu theo Khu vực -->
       <div class="bg-card border border-white/5 rounded-2xl overflow-hidden">
         <div class="p-6 pb-4 border-b border-white/5">
-          <h3 class="font-poppins font-semibold text-white">Sales by Region</h3>
-          <p class="text-slate-500 text-xs mt-0.5">Revenue distribution across markets</p>
+          <h3 class="font-poppins font-semibold text-white">Doanh thu theo Khu vực</h3>
+          <p class="text-slate-500 text-xs mt-0.5">Phân bổ doanh thu theo thị trường</p>
         </div>
-        <div class="overflow-x-auto">
+        <div class="overflow-x-auto max-h-96 overflow-y-auto">
           <table class="w-full text-sm">
-            <thead>
+            <thead class="sticky top-0 bg-[#111222] z-10">
               <tr class="border-b border-white/5">
-                <th class="text-left px-6 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Region</th>
-                <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Revenue</th>
-                <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Orders</th>
-                <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Share</th>
+                <th class="text-left px-6 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Khu vực</th>
+                <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Doanh thu</th>
+                <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Đơn hàng</th>
+                <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Tỷ trọng</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-white/5" id="regionalTable"></tbody>
@@ -239,8 +238,8 @@
     <!-- Conversion Funnel -->
     <div class="bg-card border border-white/5 rounded-2xl p-6">
       <div class="mb-6">
-        <h3 class="font-poppins font-semibold text-white">Conversion Funnel</h3>
-        <p class="text-slate-500 text-xs mt-0.5">Visitor-to-purchase journey — Q1 2026</p>
+        <h3 class="font-poppins font-semibold text-white">Phễu Chuyển đổi</h3>
+        <p class="text-slate-500 text-xs mt-0.5">Hành trình khách hàng từ lượt xem đến mua hàng — Q1 2026</p>
       </div>
       <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-0 sm:justify-between" id="funnelContainer"></div>
     </div>
@@ -248,22 +247,46 @@
     <!-- Marketing KPIs Table -->
     <div class="bg-card border border-white/5 rounded-2xl overflow-hidden">
       <div class="p-6 pb-4 border-b border-white/5">
-        <h3 class="font-poppins font-semibold text-white">Marketing KPIs</h3>
-        <p class="text-slate-500 text-xs mt-0.5">Channel performance metrics</p>
+        <h3 class="font-poppins font-semibold text-white">Chỉ số Marketing (KPIs)</h3>
+        <p class="text-slate-500 text-xs mt-0.5">Hiệu suất theo từng kênh tiếp thị</p>
       </div>
-      <div class="overflow-x-auto">
+      <div class="overflow-x-auto max-h-80 overflow-y-auto">
         <table class="w-full text-sm">
-          <thead>
+          <thead class="sticky top-0 bg-[#111222] z-10">
             <tr class="border-b border-white/5">
-              <th class="text-left px-6 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Channel</th>
-              <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Spend</th>
-              <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Revenue</th>
+              <th class="text-left px-6 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Kênh</th>
+              <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Chi phí</th>
+              <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Doanh thu</th>
               <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">ROAS</th>
               <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">CTR</th>
               <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">CPC</th>
+              <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">CPA</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-white/5" id="marketingTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Bảng đơn hàng gần đây -->
+    <div class="bg-card border border-white/5 rounded-2xl overflow-hidden">
+      <div class="p-6 pb-4 border-b border-white/5">
+        <h3 class="font-poppins font-semibold text-white">Đơn hàng Gần đây</h3>
+        <p class="text-slate-500 text-xs mt-0.5">Danh sách đơn hàng mới nhất</p>
+      </div>
+      <div class="overflow-x-auto max-h-80 overflow-y-auto">
+        <table class="w-full text-sm">
+          <thead class="sticky top-0 bg-[#111222] z-10">
+            <tr class="border-b border-white/5">
+              <th class="text-left px-6 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Mã đơn</th>
+              <th class="text-left px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Khách hàng</th>
+              <th class="text-left px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Sản phẩm</th>
+              <th class="text-right px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Tổng tiền</th>
+              <th class="text-left px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Trạng thái</th>
+              <th class="text-left px-4 py-3 text-xs font-medium text-slate-500 uppercase tracking-wider">Ngày đặt</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-white/5" id="ordersTable"></tbody>
         </table>
       </div>
     </div>
@@ -273,11 +296,11 @@
   <!-- Footer -->
   <footer class="border-t border-white/5 mt-8 mb-4">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-      <p class="text-slate-600 text-xs">E-Commerce Dashboard &copy; 2026 — All data is for demonstration purposes</p>
+      <p class="text-slate-600 text-xs">Báo Cáo Thương Mại Điện Tử &copy; 2026 — Dữ liệu giả lập cho mục đích demo</p>
       <div class="flex items-center gap-4 text-xs text-slate-600">
-        <a href="login.html" class="hover:text-[#DF6B33] transition-colors">Login</a>
-        <a href="register.html" class="hover:text-[#DF6B33] transition-colors">Register</a>
-        <a href="charts.html" class="hover:text-[#DF6B33] transition-colors">Dashboard</a>
+        <a href="login.html" class="hover:text-[#DF6B33] transition-colors">Đăng nhập</a>
+        <a href="register.html" class="hover:text-[#DF6B33] transition-colors">Đăng ký</a>
+        <a href="charts.html" class="hover:text-[#DF6B33] transition-colors">Báo cáo</a>
       </div>
     </div>
   </footer>
@@ -285,88 +308,151 @@
   <script>
     lucide.createIcons();
 
-    // ─── Mock Data ───────────────────────────────────────────────
+    // ─── Dữ liệu giả lập (gấp 3 lần) ─────────────────────────────
+
+    // Doanh thu 18 tháng
     const revenueData = {
-      labels: ['Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar'],
-      revenue: [142300, 198500, 284700, 189200, 221400, 248460],
-      orders:  [920, 1280, 1840, 1210, 1430, 1792],
+      labels: ['T10/24','T11/24','T12/24','T01/25','T02/25','T03/25','T04/25','T05/25','T06/25','T07/25','T08/25','T09/25','T10/25','T11/25','T12/25','T01/26','T02/26','T03/26'],
+      revenue: [142300, 198500, 284700, 189200, 221400, 248460, 198740, 215800, 263400, 189600, 204800, 248300, 298450, 319700, 425100, 567800, 628400, 745620],
+      orders:  [920, 1280, 1840, 1210, 1430, 1792, 1280, 1390, 1700, 1224, 1320, 1601, 1927, 2065, 2748, 3670, 4060, 4821],
     };
 
+    // Nguồn traffic (8 kênh)
     const trafficData = [
-      { name: 'Organic Search', value: 38, color: '#DF6B33' },
-      { name: 'Paid Ads',       value: 24, color: '#3B82F6' },
-      { name: 'Social Media',   value: 19, color: '#8B5CF6' },
-      { name: 'Direct',         value: 12, color: '#10B981' },
-      { name: 'Referral',       value:  7, color: '#F59E0B' },
+      { name: 'Tìm kiếm tự nhiên', value: 28, color: '#DF6B33' },
+      { name: 'Quảng cáo trả phí', value: 22, color: '#3B82F6' },
+      { name: 'Mạng xã hội',       value: 18, color: '#8B5CF6' },
+      { name: 'TikTok',             value: 12, color: '#EC4899' },
+      { name: 'Truy cập trực tiếp', value:  9, color: '#10B981' },
+      { name: 'Email Marketing',    value:  6, color: '#F59E0B' },
+      { name: 'Liên kết giới thiệu', value: 3, color: '#06B6D4' },
+      { name: 'Khác',              value:  2, color: '#64748B' },
     ];
 
+    // Danh mục sản phẩm (15 danh mục)
     const categoryData = {
-      labels: ['Electronics', 'Fashion', 'Home & Living', 'Beauty', 'Sports'],
-      revenue: [412850, 318420, 256180, 178940, 118170],
+      labels: ['Điện tử','Thời trang','Nhà cửa','Sắc đẹp','Thể thao','Sách','Thực phẩm','Đồ chơi','Công cụ','Phụ kiện','Nội thất','Làm vườn','Ô tô','Y tế','Nghệ thuật'],
+      revenue: [1238550, 955260, 768540, 536820, 354510, 287400, 213750, 189630, 172800, 156240, 143550, 98670, 84240, 72630, 53490],
     };
 
+    // Chiến dịch marketing (15 kênh)
     const campaignData = {
-      labels: ['Google Ads', 'Facebook', 'Instagram', 'Email', 'Affiliate'],
-      spent:   [28400, 19600, 14800, 4200, 8600],
-      revenue: [128600, 89200, 72400, 38200, 51600],
+      labels: ['Google Ads','Facebook','Instagram','TikTok Ads','Email','Affiliate','YouTube','Twitter / X','LinkedIn','Pinterest','Quảng cáo SMS','Zalo Ads','Shopee Ads','Lazada Ads','Tiki Ads'],
+      spent:   [85200, 58800, 44400, 39600, 12600, 25800, 31200, 16800, 12000, 9600, 7200, 8400, 18000, 14400, 10800],
+      revenue: [385800, 267600, 217200, 158400, 114600, 154800, 124800, 50400, 36000, 38400, 21600, 25200, 72000, 57600, 43200],
     };
 
+    // Top sản phẩm (15 sản phẩm)
     const topProducts = [
-      { name: 'Wireless Earbuds Pro', category: 'Electronics',   revenue: 98450, units: 3281, trend:  24.3, icon: 'headphones' },
-      { name: 'Smart Fitness Watch',  category: 'Electronics',   revenue: 87200, units: 2180, trend:  18.7, icon: 'watch' },
-      { name: 'Premium Sneakers X9',  category: 'Fashion',       revenue: 75600, units: 1260, trend:  -3.2, icon: 'footprints' },
-      { name: 'Ergonomic Desk Chair', category: 'Home & Living', revenue: 68900, units:  689, trend:  31.5, icon: 'armchair' },
-      { name: 'Vitamin C Serum Set',  category: 'Beauty',        revenue: 52400, units: 2620, trend:  42.1, icon: 'droplets' },
+      { name: 'Tai nghe Bluetooth Pro X',     category: 'Điện tử',   revenue: 295350, units: 9845, trend:  24.3, icon: 'headphones' },
+      { name: 'Đồng hồ thông minh Fit 9',    category: 'Điện tử',   revenue: 261600, units: 6540, trend:  18.7, icon: 'watch' },
+      { name: 'Giày thể thao Runner Max',    category: 'Thể thao',   revenue: 226800, units: 3780, trend:  -3.2, icon: 'footprints' },
+      { name: 'Ghế công thái học Ergo Pro',  category: 'Nội thất',  revenue: 206700, units: 2067, trend:  31.5, icon: 'armchair' },
+      { name: 'Bộ Serum Vitamin C Cao cấp',   category: 'Sắc đẹp',   revenue: 157200, units: 7860, trend:  42.1, icon: 'droplets' },
+      { name: 'Laptop Gaming Ultra 15',        category: 'Điện tử',   revenue: 142800, units:  714, trend:  15.2, icon: 'laptop' },
+      { name: 'Áo thun nam Premium Cotton',   category: 'Thời trang', revenue: 128340, units: 8546, trend:  22.8, icon: 'shirt' },
+      { name: 'Máy lọc không khí AirPure',    category: 'Nhà cửa',   revenue: 114800, units:  821, trend:   8.4, icon: 'wind' },
+      { name: 'Bàn phím cơ RGB Gaming',        category: 'Điện tử',   revenue:  98760, units: 2195, trend:  12.6, icon: 'keyboard' },
+      { name: 'Nước hoa nam Eau de Parf',     category: 'Sắc đẹp',   revenue:  92400, units: 1848, trend:  35.7, icon: 'sparkles' },
+      { name: 'Balo laptop chống sốc Pro',     category: 'Phụ kiện',  revenue:  87300, units: 2910, trend:  -1.8, icon: 'briefcase' },
+      { name: 'Sữa rửa mặt tinh chất trà xanh', category: 'Sắc đẹp', revenue:  81600, units: 5440, trend:  19.3, icon: 'droplet' },
+      { name: 'Kính VR 3D Meta Vision',       category: 'Điện tử',   revenue:  75600, units:  420, trend:  28.9, icon: 'glasses' },
+      { name: 'Bộ dụng cụ làm vườn 12 món',   category: 'Làm vườn',  revenue:  68400, units: 2280, trend:  11.2, icon: 'sprout' },
+      { name: 'Robot hút bụi thông minh',     category: 'Nhà cửa',   revenue:  62100, units:  345, trend:   6.7, icon: 'bot' },
     ];
 
+    // Doanh thu theo khu vực (15 khu vực)
     const regionalData = [
-      { region: 'North America',        flag: 'US', revenue: 514200, orders: 3380, share: 40 },
-      { region: 'Europe',                flag: 'EU', revenue: 320640, orders: 2104, share: 25 },
-      { region: 'Asia Pacific',          flag: 'AP', revenue: 256912, orders: 1840, share: 20 },
-      { region: 'Latin America',         flag: 'LA', revenue: 128456, orders:  844, share: 10 },
-      { region: 'Middle East & Africa',   flag: 'ME', revenue:  64352, orders:  304, share:  5 },
+      { region: 'Hà Nội',        flag: 'HN', revenue: 770130, orders: 5071, share: 20 },
+      { region: 'TP. Hồ Chí Minh', flag: 'HCM', revenue: 654560, orders: 4312, share: 17 },
+      { region: 'Đà Nẵng',        flag: 'DN', revenue: 385680, orders: 2542, share: 10 },
+      { region: 'Hải Phòng',     flag: 'HP', revenue: 231408, orders: 1525, share:  6 },
+      { region: 'Cần Thơ',        flag: 'CT', revenue: 192684, orders: 1270, share:  5 },
+      { region: 'Bình Dương',     flag: 'BD', revenue: 173860, orders: 1146, share:  4.5 },
+      { region: 'Đồng Nai',       flag: 'ĐN', revenue: 154280, orders: 1016, share:  4 },
+      { region: 'Quảng Ninh',    flag: 'QN', revenue: 135700, orders:  894, share:  3.5 },
+      { region: 'Thanh Hóa',      flag: 'TH', revenue: 115892, orders:  764, share:  3 },
+      { region: 'Nghệ An',        flag: 'NA', revenue:  96484, orders:  636, share:  2.5 },
+      { region: 'Hà Tĩnh',        flag: 'HT', revenue:  77070, orders:  508, share:  2 },
+      { region: 'Vinh',           flag: 'VI', revenue:  65448, orders:  431, share:  1.7 },
+      { region: 'Huế',           flag: 'HU', revenue:  57738, orders:  381, share:  1.5 },
+      { region: 'Khánh Hòa',     flag: 'KH', revenue:  50076, orders:  330, share:  1.3 },
+      { region: 'Các tỉnh khác',  flag: 'TK', revenue: 385170, orders: 2540, share: 10 },
     ];
 
+    // Marketing KPIs (15 kênh)
     const marketingKPIs = [
-      { channel: 'Google Ads',      spend: 28400, revenue: 128600, roas: 4.5, ctr: 3.2, cpc: 1.24 },
-      { channel: 'Facebook Ads',    spend: 19600, revenue:  89200, roas: 4.6, ctr: 2.1, cpc: 0.98 },
-      { channel: 'Instagram Ads',  spend: 14800, revenue:  72400, roas: 4.9, ctr: 2.8, cpc: 1.12 },
-      { channel: 'Email Marketing',spend:  4200, revenue:  38200, roas: 9.1, ctr: 4.6, cpc: 0.08 },
-      { channel: 'Affiliate',      spend:  8600, revenue:  51600, roas: 6.0, ctr: 1.8, cpc: 0.64 },
+      { channel: 'Google Ads',    spend: 85200, revenue: 385800, roas: 4.5, ctr: 3.2, cpc: 1.24, cpa: 8.72 },
+      { channel: 'Facebook Ads',  spend: 58800, revenue: 267600, roas: 4.6, ctr: 2.1, cpc: 0.98, cpa: 7.06 },
+      { channel: 'Instagram Ads', spend: 44400, revenue: 217200, roas: 4.9, ctr: 2.8, cpc: 1.12, cpa: 7.48 },
+      { channel: 'TikTok Ads',   spend: 39600, revenue: 158400, roas: 4.0, ctr: 4.1, cpc: 0.76, cpa: 6.14 },
+      { channel: 'Email Marketing', spend: 12600, revenue: 114600, roas: 9.1, ctr: 4.6, cpc: 0.08, cpa: 1.52 },
+      { channel: 'Affiliate',    spend: 25800, revenue: 154800, roas: 6.0, ctr: 1.8, cpc: 0.64, cpa: 5.12 },
+      { channel: 'YouTube Ads',  spend: 31200, revenue: 124800, roas: 4.0, ctr: 1.4, cpc: 2.18, cpa: 11.40 },
+      { channel: 'Twitter / X',  spend: 16800, revenue:  50400, roas: 3.0, ctr: 0.9, cpc: 1.84, cpa: 14.80 },
+      { channel: 'LinkedIn Ads', spend: 12000, revenue:  36000, roas: 3.0, ctr: 0.7, cpc: 3.42, cpa: 28.60 },
+      { channel: 'Pinterest',    spend:  9600, revenue:  38400, roas: 4.0, ctr: 1.2, cpc: 0.92, cpa: 8.20 },
+      { channel: 'SMS Marketing', spend:  7200, revenue:  21600, roas: 3.0, ctr: 6.8, cpc: 0.12, cpa: 2.88 },
+      { channel: 'Zalo Ads',    spend:  8400, revenue:  25200, roas: 3.0, ctr: 3.4, cpc: 0.54, cpa: 5.40 },
+      { channel: 'Shopee Ads',  spend: 18000, revenue:  72000, roas: 4.0, ctr: 2.6, cpc: 0.68, cpa: 5.80 },
+      { channel: 'Lazada Ads',  spend: 14400, revenue:  57600, roas: 4.0, ctr: 2.2, cpc: 0.72, cpa: 6.20 },
+      { channel: 'Tiki Ads',    spend: 10800, revenue:  43200, roas: 4.0, ctr: 2.4, cpc: 0.60, cpa: 5.40 },
     ];
 
-    // ─── Global Chart.js defaults (dark theme) ──────────────────
+    // Đơn hàng gần đây (18 đơn)
+    const recentOrders = [
+      { id: 'DH-20261001', customer: 'Nguyễn Văn An',   product: 'Tai nghe Bluetooth Pro X',  total: 2490000, status: 'Đã giao',         date: '21/04/2026', statusColor: '#10B981', statusBg: '#10B981/10' },
+      { id: 'DH-20261002', customer: 'Trần Thị Bình',   product: 'Đồng hồ thông minh Fit 9',   total: 3490000, status: 'Đang xử lý',     date: '21/04/2026', statusColor: '#3B82F6', statusBg: '#3B82F6/10' },
+      { id: 'DH-20261003', customer: 'Lê Hoàng Cường',  product: 'Bộ Serum Vitamin C Cao cấp',  total: 890000,  status: 'Đang giao',       date: '20/04/2026', statusColor: '#F59E0B', statusBg: '#F59E0B/10' },
+      { id: 'DH-20261004', customer: 'Phạm Thị Dung',  product: 'Ghế công thái học Ergo Pro', total: 4890000, status: 'Đã giao',         date: '20/04/2026', statusColor: '#10B981', statusBg: '#10B981/10' },
+      { id: 'DH-20261005', customer: 'Hoàng Văn Em',    product: 'Giày thể thao Runner Max',    total: 1890000, status: 'Đã hủy',           date: '20/04/2026', statusColor: '#EF4444', statusBg: '#EF4444/10' },
+      { id: 'DH-20261006', customer: 'Vũ Thị Phương',  product: 'Laptop Gaming Ultra 15',       total: 22990000, status: 'Đang xử lý',    date: '19/04/2026', statusColor: '#3B82F6', statusBg: '#3B82F6/10' },
+      { id: 'DH-20261007', customer: 'Đặng Văn Giang', product: 'Máy lọc không khí AirPure',   total: 5490000, status: 'Đã giao',         date: '19/04/2026', statusColor: '#10B981', statusBg: '#10B981/10' },
+      { id: 'DH-20261008', customer: 'Bùi Thị Hương',  product: 'Áo thun nam Premium Cotton',   total: 399000,  status: 'Đang giao',       date: '18/04/2026', statusColor: '#F59E0B', statusBg: '#F59E0B/10' },
+      { id: 'DH-20261009', customer: 'Đỗ Văn Hùng',    product: 'Nước hoa nam Eau de Parf',    total: 1490000, status: 'Đã giao',         date: '18/04/2026', statusColor: '#10B981', statusBg: '#10B981/10' },
+      { id: 'DH-20261010', customer: 'Ngô Thị Lan',    product: 'Bàn phím cơ RGB Gaming',      total: 1290000, status: 'Đang xử lý',     date: '17/04/2026', statusColor: '#3B82F6', statusBg: '#3B82F6/10' },
+      { id: 'DH-20261011', customer: 'Trịnh Văn Minh', product: 'Kính VR 3D Meta Vision',      total: 4990000, status: 'Đã giao',         date: '17/04/2026', statusColor: '#10B981', statusBg: '#10B981/10' },
+      { id: 'DH-20261012', customer: 'Lưu Thị Ngọc',   product: 'Robot hút bụi thông minh',    total: 6490000, status: 'Hoàn trả',         date: '16/04/2026', statusColor: '#8B5CF6', statusBg: '#8B5CF6/10' },
+      { id: 'DH-20261013', customer: 'Phan Văn Quang', product: 'Balo laptop chống sốc Pro',    total: 799000,  status: 'Đang giao',       date: '16/04/2026', statusColor: '#F59E0B', statusBg: '#F59E0B/10' },
+      { id: 'DH-20261014', customer: 'Hà Thị Thu',     product: 'Sữa rửa mặt tinh chất trà xanh', total: 289000, status: 'Đã giao', date: '15/04/2026', statusColor: '#10B981', statusBg: '#10B981/10' },
+      { id: 'DH-20261015', customer: 'Cao Văn Sơn',    product: 'Bộ dụng cụ làm vườn 12 món',  total: 459000,  status: 'Đang xử lý',     date: '15/04/2026', statusColor: '#3B82F6', statusBg: '#3B82F6/10' },
+      { id: 'DH-20261016', customer: 'Chu Thị Mai',    product: 'Tai nghe Bluetooth Pro X',      total: 2490000, status: 'Đã giao',         date: '14/04/2026', statusColor: '#10B981', statusBg: '#10B981/10' },
+      { id: 'DH-20261017', customer: 'Nguyễn Văn Tài',product: 'Đồng hồ thông minh Fit 9',     total: 3490000, status: 'Đang giao',       date: '14/04/2026', statusColor: '#F59E0B', statusBg: '#F59E0B/10' },
+      { id: 'DH-20261018', customer: 'Lê Thị Uyên',    product: 'Ghế công thái học Ergo Pro',  total: 4890000, status: 'Chờ thanh toán',  date: '13/04/2026', statusColor: '#F59E0B', statusBg: '#F59E0B/10' },
+    ];
+
+    // ─── Chart.js — dark theme defaults ─────────────────────────
     Chart.defaults.color = '#64748b';
     Chart.defaults.borderColor = 'rgba(255,255,255,0.06)';
     Chart.defaults.font.family = 'Inter, sans-serif';
 
-    // ─── Revenue Trend Chart ─────────────────────────────────────
+    // ─── Revenue Trend Chart (18 tháng) ──────────────────────────
     new Chart(document.getElementById('revenueChart'), {
       type: 'line',
       data: {
         labels: revenueData.labels,
         datasets: [
           {
-            label: 'Revenue',
+            label: 'Doanh thu',
             data: revenueData.revenue,
             borderColor: '#DF6B33',
             backgroundColor: 'rgba(223,107,51,0.12)',
             borderWidth: 2.5,
             pointBackgroundColor: '#DF6B33',
-            pointRadius: 4,
+            pointRadius: 3,
             pointHoverRadius: 6,
             fill: true,
             tension: 0.4,
             yAxisID: 'y',
           },
           {
-            label: 'Orders',
+            label: 'Đơn hàng',
             data: revenueData.orders,
             borderColor: '#3B82F6',
             backgroundColor: 'rgba(59,130,246,0.08)',
             borderWidth: 2,
             pointBackgroundColor: '#3B82F6',
-            pointRadius: 3,
+            pointRadius: 2,
             pointHoverRadius: 5,
             fill: true,
             tension: 0.4,
@@ -389,16 +475,16 @@
             padding: 12,
             cornerRadius: 12,
             callbacks: {
-              label: ctx => ctx.dataset.label + ': ' + (ctx.datasetIndex === 0 ? '$' + ctx.raw.toLocaleString() : ctx.raw.toLocaleString()),
+              label: ctx => ctx.dataset.label + ': ' + (ctx.datasetIndex === 0 ? ctx.raw.toLocaleString() + ' đ' : ctx.raw.toLocaleString() + ' đơn'),
             },
           },
         },
         scales: {
-          x: { grid: { display: false }, ticks: { font: { size: 12 } } },
+          x: { grid: { display: false }, ticks: { font: { size: 10 }, maxRotation: 45 } },
           y: {
             position: 'left',
             grid: { color: 'rgba(255,255,255,0.05)' },
-            ticks: { font: { size: 11 }, callback: v => '$' + (v / 1000) + 'k' },
+            ticks: { font: { size: 11 }, callback: v => (v / 1000) + 'k' },
           },
           y1: {
             position: 'right',
@@ -409,7 +495,7 @@
       },
     });
 
-    // ─── Traffic Sources Doughnut ────────────────────────────────
+    // ─── Traffic Doughnut ────────────────────────────────────────
     document.getElementById('trafficLegend').innerHTML = trafficData.map(d =>
       `<div class="flex items-center justify-between text-xs">
         <span class="flex items-center gap-2">
@@ -453,22 +539,24 @@
       },
     });
 
-    // ─── Category Bar Chart ──────────────────────────────────────
+    // ─── Category Bar Chart (15 categories) ─────────────────────
+    const catColors = [
+      'rgba(223,107,51,0.90)', 'rgba(223,107,51,0.82)', 'rgba(223,107,51,0.74)',
+      'rgba(223,107,51,0.66)', 'rgba(223,107,51,0.58)', 'rgba(223,107,51,0.50)',
+      'rgba(223,107,51,0.43)', 'rgba(223,107,51,0.36)', 'rgba(223,107,51,0.30)',
+      'rgba(223,107,51,0.24)', 'rgba(223,107,51,0.20)', 'rgba(223,107,51,0.17)',
+      'rgba(223,107,51,0.14)', 'rgba(223,107,51,0.12)', 'rgba(223,107,51,0.10)',
+    ];
+
     new Chart(document.getElementById('categoryChart'), {
       type: 'bar',
       data: {
         labels: categoryData.labels,
         datasets: [{
-          label: 'Revenue',
+          label: 'Doanh thu',
           data: categoryData.revenue,
-          backgroundColor: [
-            'rgba(223,107,51,0.85)',
-            'rgba(223,107,51,0.70)',
-            'rgba(223,107,51,0.55)',
-            'rgba(223,107,51,0.40)',
-            'rgba(223,107,51,0.28)',
-          ],
-          borderRadius: 6,
+          backgroundColor: catColors,
+          borderRadius: 4,
           borderSkipped: false,
         }],
       },
@@ -487,41 +575,41 @@
             padding: 12,
             cornerRadius: 12,
             callbacks: {
-              label: ctx => '$' + ctx.raw.toLocaleString(),
+              label: ctx => ctx.raw.toLocaleString() + ' đ',
             },
           },
         },
         scales: {
           x: {
             grid: { color: 'rgba(255,255,255,0.05)' },
-            ticks: { font: { size: 11 }, callback: v => '$' + (v / 1000) + 'k' },
+            ticks: { font: { size: 10 }, callback: v => (v / 1000) + 'k' },
           },
           y: {
             grid: { display: false },
-            ticks: { font: { size: 12 } },
+            ticks: { font: { size: 11 } },
           },
         },
       },
     });
 
-    // ─── Campaign Bar Chart ─────────────────────────────────────
+    // ─── Campaign Bar Chart (15 campaigns) ─────────────────────
     new Chart(document.getElementById('campaignChart'), {
       type: 'bar',
       data: {
         labels: campaignData.labels,
         datasets: [
           {
-            label: 'Spent',
+            label: 'Chi phí',
             data: campaignData.spent,
             backgroundColor: 'rgba(59,130,246,0.45)',
-            borderRadius: 6,
+            borderRadius: 4,
             borderSkipped: false,
           },
           {
-            label: 'Revenue',
+            label: 'Doanh thu',
             data: campaignData.revenue,
             backgroundColor: 'rgba(16,185,129,0.75)',
-            borderRadius: 6,
+            borderRadius: 4,
             borderSkipped: false,
           },
         ],
@@ -535,7 +623,7 @@
             align: 'end',
             labels: {
               color: '#94a3b8',
-              font: { size: 11 },
+              font: { size: 10 },
               boxWidth: 10,
               boxHeight: 10,
               usePointStyle: true,
@@ -551,18 +639,18 @@
             padding: 12,
             cornerRadius: 12,
             callbacks: {
-              label: ctx => ' ' + ctx.dataset.label + ': $' + ctx.raw.toLocaleString(),
+              label: ctx => ' ' + ctx.dataset.label + ': ' + ctx.raw.toLocaleString() + ' đ',
             },
           },
         },
         scales: {
           x: {
             grid: { display: false },
-            ticks: { font: { size: 11 } },
+            ticks: { font: { size: 9 }, maxRotation: 45 },
           },
           y: {
             grid: { color: 'rgba(255,255,255,0.05)' },
-            ticks: { font: { size: 11 }, callback: v => '$' + (v / 1000) + 'k' },
+            ticks: { font: { size: 10 }, callback: v => (v / 1000) + 'k' },
           },
         },
       },
@@ -571,9 +659,9 @@
     // ─── Render Tables ───────────────────────────────────────────
     document.getElementById('topProductsTable').innerHTML = topProducts.map(p => `
       <tr class="hover:bg-white/[0.02] transition-colors">
-        <td class="px-6 py-4">
+        <td class="px-6 py-3.5">
           <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-xl bg-[#DF6B33]/10 flex items-center justify-center flex-shrink-0">
+            <div class="w-8 h-8 rounded-xl bg-[#DF6B33]/10 flex items-center justify-center flex-shrink-0">
               <i data-lucide="${p.icon}" class="w-4 h-4 text-[#DF6B33]"></i>
             </div>
             <div>
@@ -582,9 +670,9 @@
             </div>
           </div>
         </td>
-        <td class="px-4 py-4 text-right text-white font-medium text-sm">$${p.revenue.toLocaleString()}</td>
-        <td class="px-4 py-4 text-right text-slate-300 text-sm">${p.units.toLocaleString()}</td>
-        <td class="px-4 py-4 text-right">
+        <td class="px-4 py-3.5 text-right text-white font-medium text-sm">${p.revenue.toLocaleString()} đ</td>
+        <td class="px-4 py-3.5 text-right text-slate-300 text-sm">${p.units.toLocaleString()}</td>
+        <td class="px-4 py-3.5 text-right">
           <span class="inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full ${p.trend > 0 ? 'text-[#10B981] bg-[#10B981]/10' : 'text-[#EF4444] bg-[#EF4444]/10'}">
             <i data-lucide="${p.trend > 0 ? 'trending-up' : 'trending-down'}" class="w-3 h-3"></i>
             ${Math.abs(p.trend)}%
@@ -595,18 +683,18 @@
 
     document.getElementById('regionalTable').innerHTML = regionalData.map(r => `
       <tr class="hover:bg-white/[0.02] transition-colors">
-        <td class="px-6 py-4">
+        <td class="px-6 py-3.5">
           <div class="flex items-center gap-2">
             <span class="w-7 h-7 rounded-lg bg-white/5 flex items-center justify-center text-xs font-bold text-slate-400">${r.flag}</span>
             <span class="text-white text-sm">${r.region}</span>
           </div>
         </td>
-        <td class="px-4 py-4 text-right text-white font-medium text-sm">$${r.revenue.toLocaleString()}</td>
-        <td class="px-4 py-4 text-right text-slate-300 text-sm">${r.orders.toLocaleString()}</td>
-        <td class="px-4 py-4 text-right">
+        <td class="px-4 py-3.5 text-right text-white font-medium text-sm">${r.revenue.toLocaleString()} đ</td>
+        <td class="px-4 py-3.5 text-right text-slate-300 text-sm">${r.orders.toLocaleString()}</td>
+        <td class="px-4 py-3.5 text-right">
           <div class="flex items-center justify-end gap-2">
             <div class="w-16 h-1.5 bg-white/10 rounded-full overflow-hidden">
-              <div class="h-full rounded-full bg-[#DF6B33]" style="width:${r.share}%"></div>
+              <div class="h-full rounded-full bg-[#DF6B33]" style="width:${Math.min(r.share * 2, 100)}%"></div>
             </div>
             <span class="text-slate-400 text-xs w-8 text-right">${r.share}%</span>
           </div>
@@ -616,26 +704,44 @@
 
     document.getElementById('marketingTable').innerHTML = marketingKPIs.map(m => `
       <tr class="hover:bg-white/[0.02] transition-colors">
-        <td class="px-6 py-4 text-white text-sm">${m.channel}</td>
-        <td class="px-4 py-4 text-right text-slate-300 text-sm">$${m.spend.toLocaleString()}</td>
-        <td class="px-4 py-4 text-right text-white font-medium text-sm">$${m.revenue.toLocaleString()}</td>
-        <td class="px-4 py-4 text-right">
+        <td class="px-6 py-3.5 text-white text-sm">${m.channel}</td>
+        <td class="px-4 py-3.5 text-right text-slate-300 text-sm">${m.spend.toLocaleString()} đ</td>
+        <td class="px-4 py-3.5 text-right text-white font-medium text-sm">${m.revenue.toLocaleString()} đ</td>
+        <td class="px-4 py-3.5 text-right">
           <span class="inline-flex items-center text-xs font-semibold px-2 py-0.5 rounded-full ${m.roas >= 4 ? 'text-[#10B981] bg-[#10B981]/10' : m.roas >= 2 ? 'text-[#F59E0B] bg-[#F59E0B]/10' : 'text-[#EF4444] bg-[#EF4444]/10'}">
             ${m.roas}x
           </span>
         </td>
-        <td class="px-4 py-4 text-right text-slate-300 text-sm">${m.ctr}%</td>
-        <td class="px-4 py-4 text-right text-slate-300 text-sm">$${m.cpc}</td>
+        <td class="px-4 py-3.5 text-right text-slate-300 text-sm">${m.ctr}%</td>
+        <td class="px-4 py-3.5 text-right text-slate-300 text-sm">${m.cpc.toFixed(2)} đ</td>
+        <td class="px-4 py-3.5 text-right text-slate-300 text-sm">${m.cpa.toFixed(2)} đ</td>
+      </tr>
+    `).join('');
+
+    // ─── Recent Orders Table ────────────────────────────────────
+    document.getElementById('ordersTable').innerHTML = recentOrders.map(o => `
+      <tr class="hover:bg-white/[0.02] transition-colors">
+        <td class="px-6 py-3.5 text-[#DF6B33] font-medium text-sm">${o.id}</td>
+        <td class="px-4 py-3.5 text-white text-sm">${o.customer}</td>
+        <td class="px-4 py-3.5 text-slate-300 text-sm max-w-[180px] truncate">${o.product}</td>
+        <td class="px-4 py-3.5 text-right text-white font-medium text-sm">${o.total.toLocaleString()} đ</td>
+        <td class="px-4 py-3.5">
+          <span class="inline-flex items-center text-xs font-medium px-2 py-0.5 rounded-full"
+                style="color:${o.statusColor};background:${o.statusBg}">
+            ${o.status}
+          </span>
+        </td>
+        <td class="px-4 py-3.5 text-slate-500 text-sm">${o.date}</td>
       </tr>
     `).join('');
 
     // ─── Conversion Funnel ───────────────────────────────────────
     const funnelData = [
-      { label: 'Visitors',       value: '156,830', pct: '100%',  color: '#3B82F6' },
-      { label: 'Product Views',  value: '38,624',  pct: '24.6%', color: '#8B5CF6' },
-      { label: 'Add to Cart',     value: '16,280',  pct: '10.4%', color: '#F59E0B' },
-      { label: 'Checkout',        value: '11,490',  pct: '7.3%',  color: '#DF6B33' },
-      { label: 'Purchased',      value: '8,472',   pct: '5.4%',  color: '#10B981' },
+      { label: 'Lượt xem',     value: '470,490', pct: '100%',  color: '#3B82F6' },
+      { label: 'Xem sản phẩm',value: '115,872',  pct: '24.6%', color: '#8B5CF6' },
+      { label: 'Thêm vào giỏ',value: '48,852',   pct: '10.4%', color: '#F59E0B' },
+      { label: 'Thanh toán',  value: '34,470',   pct: '7.3%',  color: '#DF6B33' },
+      { label: 'Hoàn thành',  value: '25,416',   pct: '5.4%',  color: '#10B981' },
     ];
 
     document.getElementById('funnelContainer').innerHTML = funnelData.map((f, i) =>
